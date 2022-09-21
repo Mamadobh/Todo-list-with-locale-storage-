@@ -1,0 +1,146 @@
+body {
+	font-family: "Work Sans", sans-serif;
+	background-color: #353f5b;
+}
+@font-face {
+	font-family: "Work Sans", sans-serif;
+	src: url(./font);
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+}
+@media (max-width: 767px) {
+	.container {
+		width: 350px;
+	}
+}
+h2 {
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+}
+.search,
+.newTodo {
+	background-color: #252c40;
+	height: 35px;
+	line-height: 35px;
+	border: 2px solid #2b4b7c;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	margin-bottom: 25px;
+}
+#search {
+	color: #fff;
+	font-size: 15px;
+	margin: auto 5px auto 0px;
+}
+.search .input,
+.newTodo .input {
+	flex: 1;
+	outline: none;
+	background-color: transparent;
+	border: none;
+	caret-color: #505564;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+.search input::placeholder,
+.newTodo input::placeholder {
+	color: #505564;
+}
+.listTodo {
+	margin-bottom: 25px;
+}
+.todo {
+	background-color: #423a6f;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+}
+.listTodo .todo:not(:last-child) {
+	border-bottom: 1px solid rgb(22 20 20 / 14%);
+}
+.todo input {
+	background-color: transparent;
+	flex: 1;
+	border: none;
+	outline: none;
+	color: #fff ;
+	font-weight: 250;
+	font-size: 14px;
+}
+.edit,
+.delete{
+	color: #fff;
+	font-size: 15px;
+	margin: auto 0px auto 10px !important;
+}
+.delete:hover {
+	color: red;
+}
+.edit:hover {
+	color: rgb(17, 153, 9);
+}
+#search:hover,
+#add:hover {
+	color: purple;
+}
+i:hover {
+	font-size: 120% !important;
+	padding: 1px;
+}
+h4 {
+	color: #fff;
+	font-weight: 250;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 20px;
+}
+button,
+.submit {
+	display: none;
+	visibility: hidden;
+}
+#add {
+	margin: auto 0px auto 10px;
+	color: #fff;
+}
+i {
+	cursor: pointer;
+}
+#alert {
+	margin: 80px auto 0px;
+	text-align: center;
+	width: 200px;
+	color: rgb(192, 8, 81);
+	font-weight: 100;
+	border: 1px solid;
+	border-radius: 10px;
+	border-bottom-right-radius: 0px;
+	position: relative;
+	padding: 15px;
+    display: none;
+   
+}
+.save{
+font-size: 18px !important;
+}
+.displayed{
+    display: block !important;
+}
+#alert div {
+	position: absolute;
+	height: 15px;
+	width: 25px;
+	background-color: rgb(192, 8, 81);
+	right: -2px;
+    bottom: -15px;
+	clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}

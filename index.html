@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="main.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TO do list with local storage</title>
+		<script
+			src="https://kit.fontawesome.com/47f6880e22.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Todo List</h2>
+			<div class="search">
+				<button id="srch"></button>
+				<label for="srch">
+					<i id="search" class="fa-solid fa-magnifying-glass"></i>
+				</label>
+				<input
+					class="input"
+					type="text"
+					placeholder="Search Todo"
+					class="searchTodo"
+				/>
+			</div>
+			<div class="listTodo">
+				<!-- <div class="todo">
+					<input type="text" readonly="readonly" value="ee" /><button
+						id="edt"
+					></button
+					><label class="edt"for="edt"
+						><i class="fa-regular fa-pen-to-square edit" ></i></label
+					><button id="dlt"></button
+					><label class="dlt"for="dlt"
+						><i class="fa-regular fa-trash-can delete" ></i
+					></label>
+				</div> -->
+			</div>
+
+			<div class="addTodo">
+				<h4>Add new todo...</h4>
+				<form class="newTodo">
+					<input
+						class="input"
+						placeholder="Add new todo"
+						type="text"
+						id="newTask"
+					/>
+					<input id="sbmt" type="submit" class="submit" value="" />
+
+					<label for="sbmt">
+						<i id="add" class="fa-solid fa-plus"></i>
+					</label>
+				</form>
+			</div>
+		</div>
+		<div id="alert">
+			<p>Pleas Write A Task... !!!</p>
+			<div></div>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
